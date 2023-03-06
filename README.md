@@ -3,3 +3,4 @@
   also becuase everyone should have a website.
   MR.d the goat.
   Made with replit.it and VSCODE
+wtfpl

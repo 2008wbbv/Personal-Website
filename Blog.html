@@ -10,6 +10,7 @@
   height: 100%;
   width: 100%;
   font-family:Lucida Console,Monaco,Verdana
+      
 }
 .pfppad {
   display: block;
@@ -25,21 +26,75 @@
   margin-right: 80%;
   width: 70%;
 }
- 
+ @keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
 
-  
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+  @keyframes hello {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
 
   </style>
 </head>
 <body>
 <h3><i>📎Ben Vaccaro   <a href="./index.html">Home</a> <a href="./Socials.html">Contact</a> <a href="./Blog.html">Blog</a> <a href="./Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a></i>
 
-  <p style=""class="bio">Heres a selection of my latest articles (I wrote them lol, dates on github releases)</p> <a style="font-size:50px;"class="bio" href="./AboutBlog.html"> <p style="font-size:50px;"class="bio">About This Blog</p> </a>
+  <p style=""class="bio">Heres a selection of my latest articles (I wrote them lol, dates on github releases)</p> <a style="font-size:50px; animation: myAnim 6s ease 0s infinite normal forwards;"class="bio" href="./AboutBlog.html"> <p style="font-size:50px;"class="bio">About This Blog</p> </a>
 <p></p>
 
 
    <p></p>
- <a href="./FOSSBLOG.html">Why You Should use FOSS Programs</a>
+ <a style="animation: hello 2s ease 0s infinite normal forwards;"href="./FOSSBLOG.html">Why You Should use FOSS Programs</a>
 <p></p>
   <a href="https://benvaccaro.repl.co/LINUXFORDEVS.html">Why a linux based OS is better for devs</a>
   <p></p>

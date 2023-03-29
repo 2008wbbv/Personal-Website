@@ -25,7 +25,13 @@
   margin-right: 80%;
   width: 70%;
 }
- 
+.pic {
+  margin-left: auto;
+  margin-right: 70%;
+}
+body {
+  background-image: url('');
+}
 @keyframes fade {
 	0%,
 	50%,
@@ -83,21 +89,50 @@
 		transform: translateY(0px);
 	}
 }
-  
+@keyframes taskbar {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes front {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
   </style>
 </head>
 <body>
-<h3><i>📎Ben Vaccaro   <a href="./index.html">Home</a> <a href="./Socials.html">Contact</a> <a href="./Blog.html">Blog</a> <a href="./Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a> <a href="OtherS.html">My Other Sites </a> <a href="https://replit.com/@BenVaccaro/BenVaccaro">Edit </a></i></h3>
+<div style="animation: front 1s ease 0ms 1 normal forwards;">
+<div style="animation: taskbar 1s ease 0ms 1 normal forwards;"><h3><i>📎Ben Vaccaro   <a href="index.html">Home</a> <a href="Socials.html">Contact</a> <a href="Blog.html">Blog</a> <a href="Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a> <a href="OtherS.html">My Other Sites </a> <a href="https://replit.com/@BenVaccaro/BenVaccaro">Edit </a></i></h3></div>
 
 <p style="font-size:50px; animation: fade 4s ease 0s 0.5 normal forwards;"class="bio fade">👋Hey there,</p>
-<p style="font-size:50px; animation: fade 4s ease 0s 0.5 normal forwards;"class="bio"> It's nice to meet you. <img src="pfp.png" style="width:200px;height: 200px; class="pfppad"</p>
-<p style="animation: myAnim 4s ease 0s 1 normal forwards;"class="bio">Im Ben Vaccaro, currently a Freshman at <a href="https://hs.millisps.org/">Millis High School.</a> <p style="animation: myAnim 4s ease 0s 1 normal forwards;"class="bio"> Im a student athlete, being on the<a href="https://twitter.com/MillisAthletics"> Millis Junior Varsity Soccer</a> and <a href="https://twitter.com/MillisAthletics">Junior Varsity Winter and Spring Track.</a> </p> </p>
+<p style="font-size:50px; animation: fade 4s ease 0s 0.5 normal forwards;"class="bio"> It's nice to meet you. <img src="./pfp (copy).png" style="width:200px;height: 200px; class="pic"</p>
+<p></p>
+  </table>
+<p style="font-size:19px; animation: myAnim 4s ease 0s 1 normal forwards;"class="bio">Im Ben Vaccaro, currently a Freshman at <a href="https://hs.millisps.org/">Millis High School.</a> <p style="font-size:19px; animation: myAnim 4s ease 0s 1 normal forwards;"class="bio"> Im a student athlete, being on the<a href="https://twitter.com/MillisAthletics"> Millis Junior Varsity Soccer</a> and <a href="https://twitter.com/MillisAthletics">Junior Varsity Winter and Spring Track.</a> </p> </p>
+<img class="bio" style="height: 30%; width: 30%;" src="peakpx.jpg">
 <p style="font-size:19px; animation: myAnim 4s ease 0s 1 normal forwards;"class="bio"> Im Interested in coding in HTML, CSS, and Python which I used to make this website. You can view my github repository and other projects on my profile <a href="https://github.com/Ben-Vaccaro"> here</a>.</p>
 <p style="font-size:19px;animation: myAnim 4s ease 0s 1 normal forwards;"class="bio"> Im passionate about many other thing from music to jailbreaking things that arent ment to be jailbreaked (kindles and 2002 mac) and boxing and skateboarding.  </p>
 <div></div>
-<p style="animation: myAnim 4s ease 0s 1 normal forwards;"class="bio">If you have any questions or wana get dunkin some time, feel free to email me at benvaccaro@proton.me
-<style>
+<p style="font-size:19px; animation: myAnim 4s ease 0s 1 normal forwards;"class="bio">If you have any questions or wana get dunkin some time, feel free to email me at benvaccaro@proton.me
+<div class="bio"><i><table><tr><td style="text-align: center;"><canvas id="canvas_tt642394d5dee85" width="175" height="175"></canvas></td></tr>
+<tr><td style="text-align: center; font-weight: bold"><a href="http://24timezones.com/usa_time/ma_suffolk/boston.htm" style="text-decoration: none" class="clock24" id="tz24-1680053461-cu102720-eyJiZ2NvbG9yIjoiRkZGRkZGIiwibGFuZyI6ImVuIiwidHlwZSI6ImEiLCJzaXplIjoiMTc1IiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjQyMzk0ZDVkZWU4NSJ9" title="Time in Boston" target="_blank">Time in Boston</a></td></tr>
+</table>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script></a> </i></div>
+</div>
+  <style>
 		.fade-in-out {
 			animation: fade-in-out 2s ease-in-out infinite;
 		}
@@ -113,6 +148,8 @@
 			}
 		}
 	</style>
+</p>
+</div>
 <body>
 </body>
 </html> 

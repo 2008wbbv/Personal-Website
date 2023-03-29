@@ -14,11 +14,9 @@
 }
 .pfppad {
   display: block;
-  margin-left: 50%;
-  margin-right: 50%;
-  margin-top: 10%;
-  *margin-bottom: %;
-  width: auto;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 200%;
 }
 .bio {
   display: block;
@@ -83,18 +81,70 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
+@keyframes taskbar {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
 
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+    @keyframes titles {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+    @keyframes about {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
   </style>
 </head>
 <body>
-<h3><i>📎Ben Vaccaro   <a href="./index.html">Home</a> <a href="./Socials.html">Contact</a> <a href="./Blog.html">Blog</a> <a href="./Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a></i>
+<div style="animation: taskbar 1s ease 0ms 1 normal forwards;"><h3><i>📎Ben Vaccaro   <a href="index.html">Home</a> <a href="Socials.html">Contact</a> <a href="Blog.html">Blog</a> <a href="Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a> <a href="OtherS.html">My Other Sites </a> <a href="https://replit.com/@BenVaccaro/BenVaccaro">Edit </a></i></h3></div>
 
-  <p style=""class="bio">Heres a selection of my latest articles (I wrote them lol, dates on github releases)</p> <a style="font-size:50px; animation: myAnim 6s ease 0s infinite normal forwards;"class="bio" href="./AboutBlog.html"> <p style="font-size:50px;"class="bio">About This Blog</p> </a>
+  <p style=""class="bio">Heres a selection of my latest articles (I wrote them lol, dates on github releases)</p> <a style="font-size:50px; animation: about 2s ease 0ms 1 normal forwards;"class="bio" href="AboutBlog.html"> <p style="font-size:50px;"class="bio">About This Blog</p> </a>
 <p></p>
 
 
-   <p></p>
- <a style="animation: hello 2s ease 0s infinite normal forwards;"href="./FOSSBLOG.html">Why You Should use FOSS Programs</a>
+   
+<div class="pfppad" style="animation: titles 1s ease 0ms 1 normal forwards;">  
+<p></p>
+ <a style="animation: hello 2s ease 0s infinite normal forwards;"href="FOSSBLOG.html">Why You Should use FOSS Programs</a>
 <p></p>
   <a href="https://benvaccaro.repl.co/LINUXFORDEVS.html">Why a linux based OS is better for devs</a>
   <p></p>
@@ -102,9 +152,9 @@
   <p></p>
    <a href="https://benvaccaro.repl.co/READINGSKILL.html">Why People Should Read More</a>
   <p></p>
-  <a href="./PR-VSCODE.html">Program Review: VScode</a>
+  <a href="PR-VSCODE.html">Program Review: VScode</a>
   <p></p>
-   <a href="./PR-EMACS.html">Program Review: Emacs</a>
+   <a href="PR-EMACS.html">Program Review: Emacs</a>
   <p></p>
 <a href="https://benvaccaro.repl.co/PR_TOOLKIT.html">Tools programers should be familair with</a>
   <p></p>
@@ -121,4 +171,5 @@
   <a href="Cadets.html">The USNSCC</a>
   <p></p>
   <a href="Battleship.html">Battleship Cove</a>
+</div>
 </body>

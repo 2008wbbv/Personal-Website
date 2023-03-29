@@ -25,11 +25,22 @@
       }
       .section li {
         margin-bottom: 0.5em;
-      }
+      } 
+      @keyframes taskbar {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
     </style>
   </head>
   <body>
-<h3><i>📎Ben Vaccaro   <a href="./index.html">Home</a> <a href="./Socials.html">Contact</a> <a href="./Blog.html">Blog</a> <a href="./Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a></i>
+<div style="animation: taskbar 1s ease 0ms 1 normal forwards;"><h3><i>📎Ben Vaccaro   <a href="index.html">Home</a> <a href="Socials.html">Contact</a> <a href="Blog.html">Blog</a> <a href="Resume.html">Resume</a> <a href="https://github.com/Ben-Vaccaro/Personal-Website">Source Code</a> <a href="OtherS.html">My Other Sites </a> <a href="https://replit.com/@BenVaccaro/BenVaccaro">Edit </a></i></h3></div>
  
     <header>
       <h1>Ben Vaccaro</h1>
